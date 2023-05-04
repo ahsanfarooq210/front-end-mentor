@@ -5,7 +5,8 @@ import './TextField.css'
 const TextField = (props) => {
   return (
     <div className='input-wrapper' >
-        <input placeholder={props.placeholder}  />
+      <label htmlFor={props.inputId} >{props.label}</label>
+        <input id={props.inputId} placeholder={props.placeholder}  />
     </div>
   )
 }
